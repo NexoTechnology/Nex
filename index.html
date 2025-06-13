@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexo - Tecnologia que Impulsiona Seu Futuro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="imagens/NexoIcon.png" alt="Nexo Logo Carregando..." class="preloader-logo">
+    </div>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+    <div id="scroll-progress-bar"></div>
+
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <div id="content-wrapper">
+        <header id="botoes" role="banner">
+            <a href="#home" class="header-logo-link" aria-label="Página Inicial da Nexo">
+                <img src="imagens/NexoIcon.png" alt="Nexo Logo" class="header-logo">
+            </a>
+            <nav id="nav" aria-label="Menu Principal">
+                <ul>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#parceiros" class="nav-link">Parceiros</a></li>
+                    <li><a href="#depoimentos" class="nav-link">Clientes</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="#contato" class="cta-button cta-button-small magnetic-link">Fale Conosco</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+        <main id="main-content" role="main">
+            <section id="home" class="hero-section">
+                <div class="hero-video-background">
+                    <video autoplay muted loop playsinline src="videos/hero-background.mp4"></video>
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-layout-container">
+                    <div class="hero-logo-wrapper" data-animation="slide-in-up">
+                        <img src="imagens/NexoIcon.png" alt="Nexo Logo" class="hero-logo-large">
+                    </div>
+                    <div class="hero-text-content" data-animation="slide-in-up" data-delay="200">
+                        <h1><span class="scramble-text">Nexo: Tecnologia que Impulsiona Seu Futuro</span></h1>
+                        <p>Redefinimos o suporte técnico com serviços de alto desempenho, segurança digital e eficiência
+                            operacional para o seu negócio prosperar na era digital.</p>
+                        <a href="#sobre" class="cta-button magnetic-link">Conheça Nossa Essência</a>
+                    </div>
+                </div>
+                <div class="section-crossover">
+                    <a href="#sobre" class="scroll-down-btn" aria-label="Ir para a próxima seção"><i
+                            class="fas fa-chevron-down"></i></a>
+                </div>
+            </section>
+
+            <section id="equipe" class="content-section">
+                <h2 data-animation="slide-in-up">Nossa Equipe de Especialistas</h2>
+                <div class="swiper-container team-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide team-member card-3d" data-tilt>
+                            <img src="imagens/Design sem nome (1)/1.png" alt="Foto de Arthur Mikhael" class="team-photo"
+                                loading="lazy">
+                            <h3>Arthur Mikhael</h3>
+                            <p>Diretor de Operações</p>
+                        </article>
+                        <article class="swiper-slide team-member card-3d" data-tilt>
+                            <img src="imagens/Design sem nome (1)/3.png" alt="Foto de Barbara Aires" class="team-photo"
+                                loading="lazy">
+                            <h3>Barbara Aires</h3>
+                            <p>Diretora de Relacionamento</p>
+                        </article>
+                        <article class="swiper-slide team-member card-3d" data-tilt>
+                            <img src="imagens/Design sem nome (1)/2.png" alt="Foto de Kaike Nicson" class="team-photo"
+                                loading="lazy">
+                            <h3>Kaike Nicson</h3>
+                            <p>Diretor de Tecnologia</p>
+                        </article>
+                        <article class="swiper-slide team-member card-3d" data-tilt>
+                            <img src="imagens/Design sem nome (1)/4.png" alt="Foto de Augusto Ponciano"
+                                class="team-photo" loading="lazy">
+                            <h3>Augusto Ponciano</h3>
+                            <p>Diretor de Marketing</p>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+
+            <section id="sobre" class="content-section">
+                <h2 data-animation="slide-in-up">Nossos Pilares</h2>
+                <div class="pilares-grid" data-stagger-parent>
+                    <article class="pilar card-3d" data-animation="stagger" data-tilt>
+                        <i class="fa-solid fa-rocket section-icon"></i>
+                        <h3>Missão</h3>
+                        <p>Garantir a otimização e o funcionamento contínuo dos seus sistemas, oferecendo segurança, performance e
+                            confiabilidade através de tecnologias avançadas e suporte proativo.</p>
+                    </article>
+                    <article class="pilar card-3d" data-animation="stagger" data-tilt>
+                        <i class="fa-solid fa-binoculars section-icon"></i>
+                        <h3>Visão</h3>
+                        <p>Ser a empresa referência em manutenção e suporte de TI, destacando-se pela inovação constante. Queremos transformar o mercado com soluções baseadas em IA, nuvem e cibersegurança.</p>
+                    </article>
+                    <article class="pilar card-3d" data-animation="stagger" data-tilt>
+                        <i class="fa-solid fa-gem section-icon"></i>
+                        <h3>Valores</h3>
+                        <p>Excelência, Inovação, Segurança, Foco no Cliente, Ética, Transparência, Colaboração e
+                            Respeito são a base de tudo que fazemos.</p>
+                    </article>
+                </div>
+            </section>
+            
+          
+            <section id="servicos" class="content-section">
+                <h2 data-animation="slide-in-up">Serviços Nexo</h2>
+                 <p class="section-subtitle" data-animation="slide-in-up" data-delay="100">
+                    Resolvemos seus desafios de tecnologia com eficiência e agilidade, do hardware ao software.
+                </p>
+                <div class="servicos-grid" data-stagger-parent>
+                    <article class="servico-item card-3d" data-animation="stagger" data-tilt>
+                        <i class="fas fa-screwdriver-wrench section-icon"></i>
+                        <h3>Manutenção e Otimização</h3>
+                        <p>Fazemos seu computador voar novamente. Limpeza, formatação, troca de peças e otimização de sistema para máxima performance.</p>
+                    </article>
+                    <article class="servico-item card-3d" data-animation="stagger" data-tilt>
+                        <i class="fas fa-shield-virus section-icon"></i>
+                        <h3>Remoção de Vírus e Segurança</h3>
+                        <p>Eliminamos malwares, spywares e qualquer ameaça digital. Protegemos seus dados com as melhores práticas de segurança do mercado.</p>
+                    </article>
+                    <article class="servico-item card-3d" data-animation="stagger" data-tilt>
+                        <i class="fas fa-cogs section-icon"></i>
+                        <h3>Instalação e Configuração</h3>
+                        <p>Instalamos e configuramos os programas que você precisa, desde softwares de trabalho a drivers essenciais, garantindo que tudo funcione perfeitamente.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="diferenciais" class="content-section">
+                <h2 data-animation="slide-in-up">Por Que Escolher a Nexo?</h2>
+                <div class="servicos-grid" data-stagger-parent>
+                    <article class="servico-item card-3d" data-animation="stagger" data-tilt>
+                        <i class="fas fa-award section-icon"></i>
+                        <h3>Compromisso com a Qualidade</h3>
+                        <p>Nosso padrão de excelência é inegociável. Entregamos soluções robustas e duradouras, garantindo o melhor desempenho para sua tecnologia.</p>
+                    </article>
+                    <article class="servico-item card-3d" data-animation="stagger" data-tilt>
+                        <i class="fas fa-rocket section-icon"></i>
+                        <h3>Inovação Contínua</h3>
+                        <p>Estamos sempre à frente das tendências, aplicando as tecnologias mais recentes para oferecer soluções que preparam seu negócio para o futuro.</p>
+                    </article>
+                    <article class="servico-item card-3d" data-animation="stagger" data-tilt>
+                        <i class="fas fa-handshake section-icon"></i>
+                        <h3>Parceria de Confiança</h3>
+                        <p>Mais do que prestadores de serviço, somos seus parceiros de tecnologia. Construímos relacionamentos baseados em transparência e confiança mútua.</p>
+                    </article>
+                </div>
+            </section>
+            
+            <section id="depoimentos" class="feedback-section content-section">
+                <h2 data-animation="slide-in-up">O Que Nossos Clientes Dizem</h2>
+                <p class="section-subtitle" data-animation="slide-in-up" data-delay="100">Confiança e resultados que
+                    falam por si.</p>
+                <div class="feedback-grid" data-stagger-parent>
+                    <article class="feedback-card card-3d" data-animation="stagger" data-tilt>
+                        <div class="feedback-header">
+                            <img src="imagens/mariana-souza.png" alt="Avatar Cliente Mariana S."
+                                class="feedback-avatar" loading="lazy">
+                            <div class="feedback-user">
+                                <h4>Mariana S.</h4>
+                                <div class="feedback-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="feedback-comment">"A Nexo é fenomenal! Meu computador estava lento e, depois do
+                            suporte, voltou a funcionar como novo. Atendimento impecável!"</p>
+                    </article>
+                    <article class="feedback-card card-3d" data-animation="stagger" data-tilt>
+                        <div class="feedback-header">
+                            <img src="imagens/diego.jpg" alt="Avatar Cliente Diego S." class="feedback-avatar" loading="lazy">
+                            <div class="feedback-user">
+                                <h4>Diego S.</h4>
+                                <div class="feedback-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="feedback-comment">"Achei que perderia meus arquivos. A Nexo recuperou tudo e deixou
+                            meu notebook melhor do que antes. Atendimento rápido e confiável!"</p>
+                    </article>
+                    <article class="feedback-card card-3d" data-animation="stagger" data-tilt>
+                        <div class="feedback-header">
+                            <img src="imagens/carlinhos.jpg" alt="Avatar Cliente Carlos M." class="feedback-avatar" loading="lazy">
+                            <div class="feedback-user">
+                                <h4>Carlos M.</h4>
+                                <div class="feedback-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="feedback-comment">"O suporte da Nexo é incomparável! Resolveram meu problema de rede
+                            rapidamente e otimizaram o sistema. Recomendo demais!"</p>
+                    </article>
+                </div>
+            </section>
+            
+            <section id="parceiros" class="content-section">
+                <h2 data-animation="slide-in-up">Parceiros Estratégicos</h2>
+                <p class="section-subtitle" data-animation="slide-in-up" data-delay="100">
+                    Colaborações que fortalecem nossas soluções e impulsionam a inovação.
+                </p>
+            
+                <div class="parceiro-destaque-wrapper card-3d" data-animation="slide-in-up" data-delay="200" data-tilt>
+                    <div class="parceiro-destaque-logo">
+                        <img src="imagens/LOGAO.png" alt="Logotipo da Nexora, parceira estratégica da Nexo" loading="lazy">
+                    </div>
+                    <div class="parceiro-destaque-texto">
+                        <h3>Nexo & Nexora: Uma Aliança de Força</h3>
+                        <p>A união da expertise da Nexo em consultoria e soluções digitais com a excelência técnica da Nexora em infraestrutura e manutenção. Juntos, oferecemos um ecossistema tecnológico completo e robusto para o seu negócio.</p>
+                        <p>Com essa parceria, garantimos soluções integradas que cobrem desde a infraestrutura física até as aplicações em nuvem, assegurando performance, segurança e um suporte unificado de ponta a ponta.</p>
+                        <div class="parceiro-botoes-container">
+                            <a href="#home" class="cta-button cta-button-small magnetic-link">Acessar Site Nexo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="processo" class="content-section">
+                <h2 data-animation="slide-in-up">Nosso Processo de Trabalho</h2>
+                <p class="section-subtitle" data-animation="slide-in-up" data-delay="100">Um caminho claro e
+                    transparente para o seu sucesso, dividido em quatro etapas essenciais.</p>
+                <div class="processo-wrapper" data-animation="slide-in-up">
+                    <svg class="processo-svg" width="100%" height="100%" viewBox="0 0 1200 150"
+                        preserveAspectRatio="none">
+                        <defs>
+                            <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:var(--color-primary-purple);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:var(--color-accent-cyan);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path id="processo-path" d="M 50 75 H 1150" stroke="url(#line-gradient)" stroke-width="4"
+                            fill="none" />
+                    </svg>
+                    <div class="processo-steps">
+                        <div class="step">
+                            <div class="step-icon">1</div>
+                            <h3>Diagnóstico</h3>
+                            <p>Análise completa e imersiva para entender suas necessidades e desafios.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon">2</div>
+                            <h3>Estratégia</h3>
+                            <p>Desenvolvimento de um plano de ação personalizado e orientado a metas.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon">3</div>
+                            <h3>Implementação</h3>
+                            <p>Execução das soluções com agilidade, precisão e comunicação constante.</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon">4</div>
+                            <h3>Suporte Contínuo</h3>
+                            <p>Monitoramento e otimização para garantir o sucesso a longo prazo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="final-cta-section">
+                <div class="final-cta-content" data-animation="slide-in-up">
+                    <h2>Pronto para Levar sua Tecnologia ao Próximo Nível?</h2>
+                    <p>Vamos conversar sobre como a Nexo pode impulsionar o seu futuro hoje mesmo. Sem compromisso.</p>
+                    <a href="#contato" class="cta-button cta-button-large magnetic-link">Iniciar Projeto</a>
+                </div>
+            </section>
+
+            <section id="contato" class="content-section">
+                <h2 data-animation="slide-in-up">Entre em contato com a Nexo</h2>
+                <p class="section-subtitle" data-animation="slide-in-up" data-delay="100">
+                    Envie-nos uma mensagem e nossa equipe de especialistas entrará em contato com você.
+                </p>
+                <div id="contato-wrapper">
+                    <div id="contato-info" data-animation="slide-in-up" data-delay="200">
+                        <a href="mailto:nexo.ofc.work@gmail.com"><i class="fas fa-envelope contato-icon"></i>
+                            nexo.ofc.work@gmail.com</a>
+                        <a href="tel:+5531000005678"><i class="fas fa-phone contato-icon"></i> (31) 00000-5678</a>
+                        <div class="contato-location"><i class="fas fa-map-marker-alt contato-icon"></i> São José da
+                            Lapa - MG, Brasil</div>
+                    </div>
+                    <form id="contato-form" data-animation="slide-in-up" data-delay="300" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="nome" name="nome" required placeholder=" ">
+                            <label for="nome">Nome Completo</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Seu Melhor E-mail</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensagem" name="mensagem" rows="4" required placeholder=" "></textarea>
+                            <label for="mensagem">Como podemos ajudar?</label>
+                        </div>
+                        <button type="submit" class="cta-button magnetic-link">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="galeria" class="content-section">
+                <h2 data-animation="slide-in-up">Nossos Momentos</h2>
+                <p class="section-subtitle" data-animation="slide-in-up" data-delay="100">
+                    Registros da nossa jornada, parcerias e do trabalho que nos move.
+                </p>
+                <div class="gallery-container" data-animation="slide-in-up" data-delay="200">
+                    <div class="swiper-container gallery-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_1.jpeg" alt="Galeria Nexo 1" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_2.jpeg" alt="Galeria Nexo 2" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_3.jpeg" alt="Galeria Nexo 3" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_4.jpeg" alt="Galeria Nexo 4" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_5.jpeg" alt="Galeria Nexo 5" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_6.jpeg" alt="Galeria Nexo 6" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_7.jpeg" alt="Galeria Nexo 7" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_8.jpeg" alt="Galeria Nexo 8" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_9.jpeg" alt="Galeria Nexo 9" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_10.jpeg" alt="Galeria Nexo 10" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_11.jpeg" alt="Galeria Nexo 11" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_12.jpeg" alt="Galeria Nexo 12" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_13.jpeg" alt="Galeria Nexo 13" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_14.jpeg" alt="Galeria Nexo 14" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_15.jpeg" alt="Galeria Nexo 15" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_16.jpeg" alt="Galeria Nexo 16" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_17.jpeg" alt="Galeria Nexo 17" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_18.jpeg" alt="Galeria Nexo 18" loading="lazy"></div>
+                            <div class="swiper-slide"><img src="imagens/galeria_curso_19.jpeg" alt="Galeria Nexo 19" loading="lazy"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="desafio" class="content-section">
+                <h2 data-animation="slide-in-up">Desafio Nexo: Teste seus Conhecimentos</h2>
+                <p class="section-subtitle" data-animation="slide-in-up" data-delay="100">
+                    Você prestou atenção nos detalhes? O Nex tem um desafio para você!
+                </p>
+            
+                <div id="desafio-wrapper" data-animation="slide-in-up" data-delay="200">
+                    <div id="desafio-mascote">
+                        <img src="imagens/nex.png" alt="Nex, o mascote da Nexo Tecnologia, convidando para o jogo.">
+                    </div>
+                    <div id="quiz-container">
+                    
+                        <div id="quiz-start-screen">
+                            <i class="fas fa-question-circle quiz-icon"></i>
+                            <h3>Pronto para começar?</h3>
+                            <p>Responda 5 perguntas rápidas sobre a Nexo e veja sua pontuação no final.</p>
+                            <button id="start-quiz-btn" class="cta-button magnetic-link">Começar o Desafio</button>
+                        </div>
+            
+                    
+                        <div id="quiz-question-screen" class="hidden">
+                            <p id="quiz-progress"></p>
+                            <h3 id="quiz-question-text"></h3>
+                            <div id="quiz-answers">
+                               
+                            </div>
+                        </div>
+            
+                        
+                        <div id="quiz-results-screen" class="hidden">
+                            <i class="fas fa-trophy quiz-icon"></i>
+                            <h3>Desafio Concluído!</h3>
+                            <p id="quiz-score-text"></p>
+                            <p id="quiz-result-message"></p>
+                            <button id="replay-quiz-btn" class="cta-button magnetic-link">Jogar Novamente</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer id="rodape-nexo" role="contentinfo">
+            <div class="footer-social">
+                <a href="#" target="_blank" aria-label="Facebook Nexo" class="social-link magnetic-link"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/nexoassistencia/" target="_blank" aria-label="Instagram Nexo"
+                    class="social-link magnetic-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn Nexo" class="social-link magnetic-link"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="current-year"></span> Nexo Soluções em Tecnologia. Todos os direitos reservados.</p>
+            </div>
+            <div class="section-crossover">
+                <a href="#home" class="scroll-top-btn" aria-label="Voltar ao Topo"><i class="fas fa-chevron-up"></i></a>
+            </div>
+        </footer>
+    </div>
+    
+    <div id="nex-mascot-container">
+        <div id="nex-speech-bubble">
+            <p id="nex-speech-text"></p>
+            <button id="nex-close-bubble" aria-label="Fechar diálogo">×</button>
+        </div>
+        <img src="imagens/nex.png" alt="Mascote Nex" id="nex-mascot-image">
+        <button id="nex-hide-mascot" aria-label="Esconder mascote">×</button>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+        integrity="sha512-wC/AcA/f9r98SMHoM1prHjCgyJfS02o0Q3s6fcrp0gW1yV9JmI//grS23ksk23Gg+K2QG+I9J9lFqG4b2v2Ag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
